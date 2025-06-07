@@ -13,6 +13,9 @@
           "agility": {
             "value": 0
           },
+          "knowledge": {
+            "value": 0
+          },
           "presence": {
             "value": 0
           },
@@ -148,6 +151,7 @@
       "startingAgility": "3d6",
       "startingHitPoints": "1d8",
       "startingItems": null,
+      "startingKnowledge": "3d6",
       "startingPresence": "3d6",
       "startingRolls": null,
       "startingSilver": "2d6*10",
