@@ -279,12 +279,14 @@ async function rollScvmForClass(clazz) {
       clazz.system.startingAgility,
       clazz.system.startingPresence,
       clazz.system.startingToughness,
+      clazz.system.startingKnowledge,
     ];
   }
   const strength = await abilityRoll(abilityRollFormulas[0]);
   const agility = await abilityRoll(abilityRollFormulas[1]);
   const presence = await abilityRoll(abilityRollFormulas[2]);
   const toughness = await abilityRoll(abilityRollFormulas[3]);
+  const knowledge = await abilityRoll(abilityRollFormulas[4]);
   const hitPoints = Math.max(1, baseHp + toughness);
   const powerUses = Math.max(0, basePowerUses + presence);
   const allDocs = [clazz];
@@ -325,6 +327,7 @@ async function rollScvmForClass(clazz) {
     description: descriptionLines.join(""),
     hitPoints,
     items: itemData,
+    knowledge,
     name,
     omens,
     powerUses,
@@ -354,6 +357,7 @@ function scvmToActorData(s) {
         agility: { value: s.agility },
         presence: { value: s.presence },
         toughness: { value: s.toughness },
+        knowledge: { value: s.knowledge },
       },
       description: s.description,
       hp: {
