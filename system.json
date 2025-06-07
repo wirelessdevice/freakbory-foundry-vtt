@@ -1,7 +1,7 @@
 {
-  "id": "morkborg",
-  "title": "MÖRK BORG",
-  "description": "Foundry VTT system for MÖRK BORG.",
+  "id": "freakbory",
+  "title": "FREAK BORY",
+  "description": "Foundry VTT system for FREAK BORY.",
   "version": "0.1.0",
   "compatibility": {
     "minimum": "11.300",
