@@ -1,7 +1,7 @@
 {
   "id": "freakbory",
   "title": "FREAK BORY",
-  "description": "Foundry VTT system for FREAK BORY.",
+  "description": "Foundry VTT system for FREAKBORY.",
   "version": "0.1.0",
   "compatibility": {
     "minimum": "11.300",
@@ -9,7 +9,7 @@
   },
   "authors": [
     {
-      "name": "wireless 'big bouncy balls' device"
+      "name": "wirelessdevice"
     }
   ],
   "esmodules": ["module/morkborg.js"],
@@ -101,7 +101,7 @@
   },
   "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/wirelessdevice/freakbroy-foundry-vtt",
+  "url": "https://github.com/wirelessdevice/freakbory-foundry-vtt",
   "manifest": "https://github.com/wirelessdevice/freakbory-foundry-vtt/releases/latest/download/system.json",
   "download": "https://github.com/wirelessdevice/freakbory-foundry-vtt/releases/latest/download/system.zip"
 }
