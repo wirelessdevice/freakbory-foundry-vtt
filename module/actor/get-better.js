@@ -9,6 +9,8 @@ export async function getBetter(actor) {
   const newPre = await betterAbility(oldPre);
   const oldTou = actor.system.abilities.toughness.value;
   const newTou = await betterAbility(oldTou);
+  const oldKno = actor.system.abilities.knowledge.value;
+  const newKno = await betterAbility(oldKno);
   let newSilver = actor.system.silver;
 
   const hpOutcome = abilityOutcome(game.i18n.localize("MB.HP"), oldHp, newHp);
@@ -31,6 +33,11 @@ export async function getBetter(actor) {
     game.i18n.localize("MB.AbilityToughness"),
     oldTou,
     newTou
+  );
+  const knoOutcome = abilityOutcome(
+    game.i18n.localize("MB.AbilityKnowledge"),
+    oldKno,
+    newKno
   );
 
   // Left in the debris you find...
@@ -56,6 +63,7 @@ export async function getBetter(actor) {
     agiOutcome,
     debrisOutcome,
     hpOutcome,
+    knoOutcome,
     preOutcome,
     strOutcome,
     touOutcome,
@@ -85,6 +93,7 @@ export async function getBetter(actor) {
     ["system.abilities.agility.value"]: newAgi,
     ["system.abilities.presence.value"]: newPre,
     ["system.abilities.toughness.value"]: newTou,
+    ["system.abilities.knowledge.value"]: newKno,
     ["system.hp.max"]: newHp,
     ["system.silver"]: newSilver,
   });
