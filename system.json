@@ -1,5 +1,5 @@
 {
-  "id": "freakbory",
+  "id": "morkborg",
   "title": "FREAK BORY",
   "description": "Foundry VTT system for FREAKBORY.",
   "version": "0.1.0",
@@ -30,28 +30,28 @@
     {
       "name": "mork-borg-actors",
       "label": "MÖRK BORG (Actors)",
-      "system": "freakbory",
+      "system": "morkborg",
       "path": "./packs/mork-borg-actors",
       "type": "Actor"
     },
     {
       "name": "mork-borg-items",
       "label": "MÖRK BORG (Items)",
-      "system": "freakbory",
+      "system": "morkborg",
       "path": "./packs/mork-borg-items",
       "type": "Item"
     },
     {
       "name": "mork-borg-macros",
       "label": "MÖRK BORG (Macros)",
-      "system": "freakbory",
+      "system": "morkborg",
       "path": "./packs/mork-borg-macros",
       "type": "Macro"
     },
     {
       "name": "mork-borg-tables",
       "label": "MÖRK BORG (Tables)",
-      "system": "freakbory",
+      "system": "morkborg",
       "path": "./packs/mork-borg-tables",
       "type": "RollTable"
     }
