@@ -98,6 +98,15 @@ export async function testToughness(actor) {
     null
   );
 }
+export async function testKnowledge(actor) {
+  await testAbility(
+    actor,
+    "knowledge",
+    "MB.AbilityKnowledge",
+    "MB.AbilityKnowledgeAbbrev",
+    null
+  );
+}
 
 export async function testCustomAbility(actor, ability) {
   await testAbility(
