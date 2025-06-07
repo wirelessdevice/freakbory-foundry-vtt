@@ -10,6 +10,7 @@ import { useFeat } from "../feats.js";
 import {
   testAgility,
   testCustomAbility,
+  testKnowledge,
   testPresence,
   testStrength,
   testToughness,
@@ -143,6 +144,9 @@ export class MBCharacterSheet extends MBActorSheet {
       .find(".ability-label.rollable.toughness")
       .on("click", this._onToughnessRoll.bind(this));
     html
+      .find(".ability-label.rollable.knowledge")
+      .on("click", this._onKnowledgeRoll.bind(this));
+    html
       .find(".ability-label.rollable.custom")
       .on("click", this._onCustomAbilityRoll.bind(this));
 
@@ -178,6 +182,11 @@ export class MBCharacterSheet extends MBActorSheet {
   _onToughnessRoll(event) {
     event.preventDefault();
     testToughness(this.actor);
+  }
+
+  _onKnowledgeRoll(event) {
+    event.preventDefault();
+    testKnowledge(this.actor);
   }
 
   _onCustomAbilityRoll(event) {
