@@ -36,7 +36,7 @@ export function configureHandlebars() {
   });
   Handlebars.registerHelper("abilityLabelClass", function (string) {
     string = string.toLowerCase();
-    if (!["agility", "presence", "strength", "toughness"].includes(string)) {
+    if (!["agility", "presence", "strength", "toughness", "knowledge:].includes(string)) {
       return "custom " + string;
     }
     return string;
