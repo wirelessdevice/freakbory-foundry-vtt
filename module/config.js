@@ -4,7 +4,7 @@ export const MB = {};
 MB.systemName = "morkborg";
 
 // order of abilities on the character sheet
-MB.abilitySheetOrder = ["strength", "agility", "presence", "toughness"];
+MB.abilitySheetOrder = ["strength", "agility", "presence", "toughness", "knowledge"];
 
 MB.armorTiers = {
   0: {
